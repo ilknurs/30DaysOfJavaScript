@@ -2,7 +2,7 @@ let firstName = "Ilknur"
 let lastName = "Sercek"
 let country = "Turkiye"
 let city = "Aydin"
-let age = "24"
+let age = 24
 let job
 
 console.log(typeof 'Ilknur')
