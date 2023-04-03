@@ -68,45 +68,87 @@
 
 
 
-const ItCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle']
-ItCompanies.unshift('Amazon')
-console.log(ItCompanies)
-console.log(ItCompanies.length)
+// const ItCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle']
+// ItCompanies.unshift('Amazon')
+// console.log(ItCompanies)
+// console.log(ItCompanies.length)
 
 
 
-// Dizinin ilk elemanı
-console.log("İlk eleman: " + ItCompanies[0]);
+// // Dizinin ilk elemanı
+// console.log("İlk eleman: " + ItCompanies[0]);
 
-// Dizinin orta elemanı (uzunluğu çift ise, iki orta eleman vardır)
-let middleIndex = Math.floor(ItCompanies.length / 2);
-console.log("Orta eleman(lar): " + ItCompanies[middleIndex]);
+// // Dizinin orta elemanı (uzunluğu çift ise, iki orta eleman vardır)
+// let middleIndex = Math.floor(ItCompanies.length / 2);
+// console.log("Orta eleman(lar): " + ItCompanies[middleIndex]);
 
-// Dizinin son elemanı
-console.log("Son eleman: " + ItCompanies[ItCompanies.length - 1]);
+// // Dizinin son elemanı
+// console.log("Son eleman: " + ItCompanies[ItCompanies.length - 1]);
 
 
 
-for (let i = 0; i < ItCompanies.length; i++) {
-    console.log(ItCompanies[i]);
-  }
+// for (let i = 0; i < ItCompanies.length; i++) {
+//     console.log(ItCompanies[i]);
+//   }
 
-console.log(ItCompanies.indexOf("Google"))
+// console.log(ItCompanies.indexOf("Google"))
 
-console.log(ItCompanies.slice(0,3))
+// console.log(ItCompanies.slice(0,3))
 
-let slicedCompanies = ItCompanies.slice(middleIndex, middleIndex + (ItCompanies.length % 2));
+// let slicedCompanies = ItCompanies.slice(middleIndex, middleIndex + (ItCompanies.length % 2));
 
-// Dilimlenen şirketleri yazdır
-console.log(slicedCompanies);
+// // Dilimlenen şirketleri yazdır
+// console.log(slicedCompanies);
 
-// ItCompanies.shift()
+// // ItCompanies.shift()
+// // console.log(ItCompanies)
+
+// //ortadaki elemanı siler.
+// ItCompanies.splice(middleIndex, ItCompanies.length % 2);
+// console.log(ItCompanies);
+
+// //Bütün elemanları siler.
+// ItCompanies.splice(0, ItCompanies.length)
 // console.log(ItCompanies)
 
-//ortadaki elemanı siler.
-ItCompanies.splice(middleIndex, ItCompanies.length % 2);
-console.log(ItCompanies);
+// let text = "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python."
+// text.split(" ");
+// console.log(text)
+// console.log(text.length);
 
-//Bütün elemanları siler.
-ItCompanies.splice(0, ItCompanies.length)
-console.log(ItCompanies)
+// const  shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+// shoppingCart.unshift('Meat') // en başa ekler.
+// console.log(shoppingCart)
+
+// shoppingCart.push('Sugar') // en sona ekler.
+// console.log(shoppingCart)
+
+// shoppingCart[shoppingCart.indexOf("tea")] = "green tea";
+// console.log(shoppingCart)
+
+const  frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+
+const  backEnd = ['Node','Express', 'MongoDB']
+
+
+const fullStack = frontEnd.concat(backEnd)
+console.log(fullStack)
+
+
+const  ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+//console.log(ages.sort())
+
+console.log(ages)
+let medianAge = ages[Math.floor(ages.length / 2)];
+console.log(medianAge);
+
+let minAge = console.log(ages[0])
+let maxAge = console.log(ages.sort()[ages.length-1])
+
+let avgAge;
+for (i = 0; i < ages.length; i++) {
+    let totalAge = 0;
+    totalAge += ages[i];
+    avgAge = totalAge / ages.length;
+}
+console.log(avgAge)
