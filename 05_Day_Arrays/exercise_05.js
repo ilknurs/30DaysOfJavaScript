@@ -151,4 +151,4 @@ for (i = 0; i < ages.length; i++) {
     totalAge += ages[i];
     avgAge = totalAge / ages.length;
 }
-console.log(avgAge)
+console.log(avgAge) 
