@@ -147,23 +147,32 @@
 // }
 // console.log(sumEvenOdd)
 
-//generating random unique arr
-let randomUniqueArr = [];
-for (let i = 5; randomUniqueArr.length < i;) {
-    let random = Math.floor(Math.random() * 10);
-    if (randomUniqueArr.indexOf(random) === -1) {
-        randomUniqueArr.push(random);
-    }
-}
-console.log(randomUniqueArr)
+// //generating random unique arr
+// let randomUniqueArr = [];
+// for (let i = 5; randomUniqueArr.length < i;) {
+//     let random = Math.floor(Math.random() * 10);
+//     if (randomUniqueArr.indexOf(random) === -1) {
+//         randomUniqueArr.push(random);
+//     }
+// }
+// console.log(randomUniqueArr)
 
-//Herhangi bir sayıda rastgele id numarası atayan bir fonksiyon yazın
-let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-let r = Math.floor(Math.random() * chars.length);
-let randChars = "";
-for (let i = 0; i < r; i++) {
-    let random = Math.floor(Math.random() * chars.length);
-    randChars += chars[random];
-}
-console.log(randChars);
+// //Herhangi bir sayıda rastgele id numarası atayan bir fonksiyon yazın
+// let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+// let r = Math.floor(Math.random() * chars.length);
+// let randChars = "";
+// for (let i = 0; i < r; i++) {
+//     let random = Math.floor(Math.random() * chars.length);
+//     randChars += chars[random];
+// }
+// console.log(randChars);
 
+
+let techs = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+// for (let i = 0; i < techs.length; i++) {
+//     console.log(techs[i])
+// }
+
+for (let tech of techs) {
+    console.log(tech);
+}
