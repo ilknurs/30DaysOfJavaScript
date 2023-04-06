@@ -78,8 +78,11 @@ console.log(square(2))
 
 console.log("-------------")
 
-
-
+function volumeOfRectPrism(lenght, width, height){
+    let volume = length * width * height
+    return volume
+}
+console.log(volumeOfRectPrism(2,3,5))
 
 
 
